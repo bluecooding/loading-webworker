@@ -1,0 +1,51 @@
+{
+  "name": "loadingbywebworker",
+  "version": "1.0.0",
+  "description": "(주)오렌지아이 DSM 프로젝트에서 사용될 로딩바 ",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "npm run clean & webpack --mode production",
+    "build-dev": "webpack --mode development",
+    "dev": "webpack-dev-server --open --mode development"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-transform-arrow-functions": "^7.12.1",
+    "@babel/plugin-transform-classes": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.3.1",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "tui-pagination": "^3.4.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@babel/runtime": "^7.12.5",
+    "@babel/runtime-corejs3": "^7.12.5",
+    "axios": "^0.21.0",
+    "bluebird": "^3.7.2",
+    "bootstrap": "^4.5.3",
+    "bootstrap-icons": "^1.2.1",
+    "core-js": "^3.8.1",
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "popper.js": "^1.16.1",
+    "rimraf": "^3.0.2",
+    "tui-grid": "^4.15.3"
+  }
+}
